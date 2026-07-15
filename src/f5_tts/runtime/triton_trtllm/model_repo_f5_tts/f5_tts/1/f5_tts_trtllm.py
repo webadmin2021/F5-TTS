@@ -236,7 +236,7 @@ class F5TTS(object):
         self.rope_cos = self.freqs.cos().half()
         self.rope_sin = self.freqs.sin().half()
 
-        self.nfe_steps = 16
+        self.nfe_steps = 32
         epss = {
             5: [0, 2, 4, 8, 16, 32],
             6: [0, 2, 4, 6, 8, 16, 32],
